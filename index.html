@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <div class="form-container">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="username" placeholder="Enter name"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="userage" placeholder="Enter age"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <select id="usergender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select id="usercourse">
+                            <option value="java">JAVA</option>
+                            <option value="c">C</option>
+                            <option value="c++">C++</option>
+                            <option value="python">PYTHON</option>
+                            <option value="javascript">JAVASCRIPT</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="useremail" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="doaction()">Save</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <h1>Saved Data</h1>
+        <div class="table-container">
+            <table id="studenttable">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
